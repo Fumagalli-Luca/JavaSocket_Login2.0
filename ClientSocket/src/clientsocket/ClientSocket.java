@@ -32,13 +32,13 @@ public class ClientSocket {
             boolean stato = false;
             
             String username = null, password = null;
-            String user, psw;
+            String user, pwd;
 
             do {
                 System.out.println("Selezionare una scelta:\n"
                         + "0 Esci \n"
-                        + "1 registrazione \n"
-                        + "2 log in\n");
+                        + "1 reg \n"
+                        + "2 login\n");
                 scelta = sc.nextInt();
 
                 switch (scelta) {
@@ -46,20 +46,22 @@ public class ClientSocket {
                         stato = true;
                         break;
                     case 1:
-                        System.out.println("Inserire user name");
+                        System.out.println("Inserire username");
                         user = tastiera.next();
-                        System.out.println("Inserire password");
-                        psw = tastiera.next();
-
+                        System.out.println("Inserire pwd");
+                        pwd = tastiera.next();
+                        out.print(user);
+                        out.print(pwd);
                         stato = false;
                         break;
-
+break;
                     case 2:
-                        System.out.println("Inserire user name");
+                        System.out.println("Inserire username");
                         username = tastiera.next();
-                        System.out.println("Inserire password");
+                        System.out.println("Inserire pwd");
                         password = tastiera.next();
-
+                        out.print(username);
+                        out.print(password);
                         out.println(username);
                         System.out.println("Il server risponde: " + in.readLine());
 

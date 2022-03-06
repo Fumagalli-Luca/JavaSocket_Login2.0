@@ -14,7 +14,7 @@ import java.io.FileReader;
 import java.io.IOException;
 /**
  *
- * @author Luca Fumagalli
+ * @author fumagalli.luca
  */
 public class Server {
 
